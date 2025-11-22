@@ -42,3 +42,35 @@ def factorial(n):
     if n==1 or n==0:
         return 1
     return n*factorial(n-1)
+
+# 22 Nov 2025
+#Reversing string using recursion
+
+def reverse(reversed, string):
+    if len(string) == 0:
+        return ""
+    reverse(string[-1]+ reversed, string[:-1])
+
+#Selection sort algorithm
+def selection_sort(arr):
+    n = len(arr)
+    for i in range(n):
+        min_index = i
+        for j in range(i+1, n):
+            if arr[j] < arr[min_index]:
+                min_index = j
+        arr[i], arr[min_index] = arr[min_index], arr[i]
+    return arr
+
+# Bubble sort algorithm optimized
+def bubble_sort(arr):
+    n = len(arr)
+    for i in range(n):
+            swapped = False
+            for j in range(0, n-i-1):
+                if arr[j] > arr[j+1]:
+                    arr[j], arr[j+1] = arr[j+1], arr[j]
+                    swapped = True
+            if not swapped:
+                break
+    return arr
