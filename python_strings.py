@@ -88,7 +88,7 @@ c.startswith('sd')
 "This is {age} and i am {name}".format(name="nitesh",age=30)
 
 "falt20".isalnum()#true
-"falt20".isalpha()#false
+"falt20@".isalpha()#false
 "20".isdigit()
 "hello world".isidentifier()#false
 

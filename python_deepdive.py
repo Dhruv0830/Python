@@ -25,7 +25,7 @@ a=2
 b=a
 c=b
 sys.getrefcount(a)
-#Ideally, this should give us 4 as the answer but due to the fact that 2 is a very common number it is already being pointed by a lot of variables and thus we get a very high number like 373. If we use an uncommon number the it is possible that we might get 4 as the answer.
+#Ideally, this should give us 4 as the answer but due to the fact that 2 is a very common number it is already being pointed by a lot of variables and thus we get a very high number like 373. If we use an uncommon number then it is possible that we might get 4 as the answer.
 
 #The above behaviour occurs when the value is between -5 to 256 . But, if we go beyond this range then 2 different objects are created in two different memory addresses.
 

@@ -133,7 +133,7 @@ a = None #Absence of anything. We want to declare the variable without any value
 
 #Logical Operator: and , or , not .
 
-#Bitwise Operator: &(binary and) , |(binary or) , <<(right shift) , <<(left shift) , ~ (complement)
+#Bitwise Operator: &(binary and) , |(binary or) , >>(right shift) , <<(left shift) , ~ (complement)
 
 #Assignment Operator: a = 3 (= is assignment operator) , += , -= , *= , /= , &= 
 
@@ -175,7 +175,7 @@ print("You took ", counter, "attempts")
 #For loops
 
 #Range function
-list[range(1,11)]
+list(range(1,11))
 range(5)
 range(20, 10, -2)
 
