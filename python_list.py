@@ -1,6 +1,6 @@
 #Python list
 
-#Array is homogeneous while list is not. Also elements in list are not contiguous but lists are slower as a result.
+#Array is homogeneous while list is not. Also elements in list are not contiguous , therefore lists are slower as a result.
 
 l1= [1,2,3,4]
 l3= [1,2,3,True]
@@ -23,7 +23,7 @@ l1.extend("hello")
 
 l2.insert(0,"world") #inserting at desired location
 
-#Deleting frmo list
+#Deleting from list
 
 del l2
 del l2[1]

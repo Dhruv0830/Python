@@ -384,9 +384,52 @@ nums = [1,1,1,2,3,3,5,6,7,7,7,9,12,12,13]
 target = 1
 
 def lower_bound(arr,target):
-    pass                
+    low, high = 0, len(arr)-1
+    lb = len(arr)
+    
+    while low<=high:
+        mid = low+(high-low)//2
+        if arr[mid] >= target:
+            lb = mid
+            high = mid-1
+                      
+        else:
+            low = mid+1  
             
+    return lb        
+
+#Smallest index such that arr[ub] > target
+
+def upper_bound(arr,target):
+    low, high = 0, len(arr)-1
+    ub = len(arr)
+    
+    while low<=high:
+        mid = low+(high-low)//2
+        if arr[mid] >  target:
+            ub = mid
+            high = mid-1
+                      
+        else:
+            low = mid+1  
             
+    return ub        
+            
+#Using the upper and lower bound we can find the starting and ending point of our target
+
+#Search Insert position
+
+#Array is sorted an all elements are unique
+
+nums_4 = [1,3,4,5,8,9,14,15,19,20,21]
+#Return where the index where the target can be inserted
+ 
+def insert_pos(arr,target):
+    #This is basically lower bound
+    return lower_bound(arr,target)  
+
+  
+         
             
                     
          
